@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReservationActivity">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/sky_500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="자리 예약하기"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_parking_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_back_stroke"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="열정 주차장"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_back_stroke"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="주차한 자리 : "/>
+
+        <TextView
+            android:id="@+id/tv_parking_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="-"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:background="#536DFE"
+            android:text="예약가능"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:background="#9E9E9E"
+            android:text="예약불가"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_position_1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btn_position_2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="2"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_position_3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_position_4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btn_position_5"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="5"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_position_6"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_position_7"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/btn_position_8"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_position_9"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="70dp"
+            android:paddingVertical="8dp"
+            android:background="@drawable/shape_back_stroke"
+            android:textColor="@color/black"
+            android:text="출구"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_position_10"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#536DFE"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="10"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

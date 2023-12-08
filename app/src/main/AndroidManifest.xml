@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.empty_parkinglot">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_main"
+        android:label="빈 주차장"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Empty_ParkingLot"
+        tools:targetApi="31">
+        <activity
+            android:name=".PaymentActivity"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ReservationActivity"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UserActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

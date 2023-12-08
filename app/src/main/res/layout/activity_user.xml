@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/sky_500">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="215dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|top|left"
+                android:text="회원정보"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="곽권빈"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="48dp"
+                android:layout_gravity="center">
+
+                 <TextView
+                    android:id="@+id/idText"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                     android:textSize="18sp"
+                    android:padding="10dp"
+                     android:textColor="@color/black"
+                    android:text=" 아이디"
+                    android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                    android:drawableLeft="@drawable/ic_baseline_account_circle_24" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pwText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:hint=" 비밀번호"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:layout_marginTop="2dp"/>
+
+
+            <EditText
+                android:id="@+id/telText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:hint=" 전화번호"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:layout_marginTop="2dp"
+                android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/carnumText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:hint=" 자동차 등록번호"
+                android:drawableStart="@drawable/ic_baseline_directions_car_24"
+                android:drawableLeft="@drawable/ic_baseline_directions_car_24"
+                android:layout_marginTop="2dp"/>
+
+            <Button
+                android:id="@+id/registerdoneBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@color/sky_700"
+                android:text="수정하기"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/tv_parking_position"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shape_back_stroke"
+                android:textColor="@color/black"
+                android:text="차량 주차 자리 or 여부"/>
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/shape_back_stroke"
+                android:textColor="@color/black"
+                android:text="결제 누적 금액"/>
+
+
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="#BABABA"
+                android:text="로그아웃"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

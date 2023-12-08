@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/sky_500">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="회원가입"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="70dp"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/idText"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                    android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                    android:hint=" 아이디"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/idcheckBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="중복확인"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pwText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:hint=" 비밀번호"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:layout_marginTop="2dp"/>
+
+            <EditText
+                android:id="@+id/pwcheckText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:hint=" 비밀번호 재확인"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:hint=" 이름"
+                android:drawableStart="@drawable/ic_baseline_tag_faces_24"
+                android:drawableLeft="@drawable/ic_baseline_tag_faces_24"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:id="@+id/telText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:hint=" 전화번호"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:layout_marginTop="2dp" />
+
+            <EditText
+                android:id="@+id/carnumText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:hint=" 자동차 등록번호"
+                android:drawableStart="@drawable/ic_baseline_directions_car_24"
+                android:drawableLeft="@drawable/ic_baseline_directions_car_24"
+                android:layout_marginTop="2dp"/>
+
+            <Button
+                android:id="@+id/registerdoneBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@color/sky_700"
+                android:text="가입하기"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
